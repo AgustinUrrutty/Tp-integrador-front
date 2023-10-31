@@ -128,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-
+                <div id="contenido"></div>
                 <div class="d-flex justify-content-between container mt-3 ">
 
                     <div class="w-50 pe-1 ">
@@ -147,27 +147,26 @@
 
                     <div class="w-50 pe-1 ">
                         <p class="fs-5">Cantidad</p>
-                        <select class="form-select" aria-label="Default select example">
-
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
+                        <select class="form-select" aria-label="Default select example" id="selectCantidad">
+                            <option value="1" >1</option>
+                            <option value="2" >2</option>
+                            <option value="3" >3</option>
+                            <option value="4" >4</option>
+                            <option value="5" >5</option>
                         </select>
                     </div>
                     <div class="w-50 ps-1 ">
                         <p class="fs-5">Categoria</p>
-                        <select class="form-select" aria-label="Default select example">
-                            <option value="1">Estudiante</option>
-                            <option value="2">Trainee</option>
-                            <option value="3">Junior</option>
+                        <select class="form-select" aria-label="Default select example" id="selectDescuentos">
+                            <option value="80" >Estudiante</option>
+                            <option value="50" >Trainee</option>
+                            <option value="15" >Junior</option>
                         </select>
                     </div>
                 </div>
                 <div class="container-fluid">
                     <div class="alert alert-info mt-4  " role="alert">
-                        Total a pagar: $
+                        Total a pagar: <span id="resultado"></span>$
                     </div>
                 </div>
                 <div class="container">
@@ -177,7 +176,7 @@
                                 <h4>Borrar</h4>
                             </button>
                         </div>
-                        <div class=" col-6 mt-2 mb-4">
+                        <div class=" col-6 mt-2 mb-4" >
                             <button class="btn h-7 bg-verde color-blanco w-100" type="button">
                                 <h4>Comprar</h4>
                             </button>
@@ -297,7 +296,7 @@
         </div>
         </div>
     </footer>
-
+    <script src="js/js.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
